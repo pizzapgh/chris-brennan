@@ -10,6 +10,9 @@ ul{
   padding:0;
   margin:0 !important;
 }
+li:last-child{
+  margin:0;
+}
 li a{
   text-decoration:none;
 }
@@ -39,13 +42,19 @@ section .skills h3{
 p{
   font-family: 'Roboto', sans-serif;
   font-weight:300;
-  letter-spacing: 0.010rem;
 }
 .title{
+  font-size:1rem;
   font-style:italic;
   font-weight:700;
-  font-size:1rem;
   line-height: 1rem;
+}
+::-webkit-input-placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-size:0.8125rem;
+  font-weight:400;
+  font-style:italic;
+  color:#7d7d7d;
 }
 
 /*  font styles
@@ -66,6 +75,11 @@ header h2.title{
   color:#62500f; /*-- brown --*/
 }
 section h2.section-title,
+article h2.section-title,
+footer h2.section-title{
+  font-size:2.875rem;
+}
+section h2.section-title,
 footer h2.section-title{
   color:#f1efe8; /*-- white --*/
 }
@@ -74,10 +88,17 @@ article h2.section-title{
 }
 section .websites h3,
 section .codepen h3{
+  font-size:1.25rem;
   color:#ffd41d;
 }
 section .skills h3{
+  font-size: 1.563rem;
   color:#00ffff;
+}
+section .websites li,
+section .codepen li{
+  font-size:0.785rem;
+  line-height: 1rem;
 }
 section .websites li a,
 section .codepen li a{
@@ -85,20 +106,40 @@ section .codepen li a{
   color:#f1efe8;
 }
 section .skills li{
+  font-size:1.063rem;
   color:#f1efe8;
 }
 article .name{
+  font-size: 1.125rem;
   font-weight:700;
   color:#ec0349;
 }
+article p{
+  font-size: 0.875rem;
+}
+article .fa-quote-left{
+  font-size:40px;
+  color:#ec0349;
+}
 footer .social li a{
+  font-size: 0.875rem;
   color:#f1efe8;
 }
+
+footer .social .fa{
+  font-size:1.563rem;
+}
 footer .resume-pdf a{
+  font-size: 0.8125rem;
   color:#ffd41d;
 }
-footer h3.tagline,
-footer p.intro{
+footer h3.tagline{
+  font-size: 1.063rem;
+  letter-spacing:0.010rem;
+  color:#f1efe8;
+}
+footer .intro{
+  font-size:0.75rem;
   color:#f1efe8;
 }
 footer .my-button{
@@ -108,3 +149,10 @@ footer .my-button{
 
 /*  colour styles
 ======================*/
+header img{
+  width:276px;
+}
+article img{
+  width:86px;
+  border-radius:50%;
+}
