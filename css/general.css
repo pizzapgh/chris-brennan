@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+ul{
+  list-style-type: none;
+  padding:0;
+  margin:0 !important;
+}
+li a{
+  text-decoration:none;
+}
+i{
+ color:#f1efe8;
+}
+
+/*  global
+======================*/
+
+.site-name,
+.section-title{
+  font-family: 'Roboto Slab', serif;
+  font-weight:700;
+}
+.site-name{
+  font-size:3.75rem;
+  line-height: 3.125rem;
+}
+section .websites h3,
+section .codepen h3,
+section .skills h3{
+  font-family: 'Roboto Slab', serif;
+  font-weight:700;
+}
+.title,
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  letter-spacing: 0.010rem;
+}
+.title{
+  font-style:italic;
+  font-weight:700;
+  font-size:1rem;
+  line-height: 1rem;
+}
+
+/*  font styles
+======================*/
+
+header,
+article{
+  background-color: #ffd41d;
+}
+section,
+footer{
+  background-color:#ec0349;
+}
+header h1.site-name{
+  color:#ec0349; /*-- red --*/
+}
+header h2.title{
+  color:#62500f; /*-- brown --*/
+}
+section h2.section-title,
+footer h2.section-title{
+  color:#f1efe8; /*-- white --*/
+}
+article h2.section-title{
+  color:#62500f; /*-- brown --*/
+}
+section .websites h3,
+section .codepen h3{
+  color:#ffd41d;
+}
+section .skills h3{
+  color:#00ffff;
+}
+section .websites li a,
+section .codepen li a{
+  text-decoration:underline;
+  color:#f1efe8;
+}
+section .skills li{
+  color:#f1efe8;
+}
+article .name{
+  font-weight:700;
+  color:#ec0349;
+}
+footer .social li a{
+  color:#f1efe8;
+}
+footer .resume-pdf a{
+  color:#ffd41d;
+}
+footer h3.tagline,
+footer p.intro{
+  color:#f1efe8;
+}
+footer .my-button{
+  background-color: #ffd41d !important;
+  border:none !important;
+}
+
+/*  colour styles
+======================*/
