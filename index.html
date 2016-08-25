@@ -1,83 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Chris Brennan | Web Developer/Designer</title>
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title">
-    <link rel="stylesheet" href="css/skeleton.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,700i|Roboto+Slab:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css" media="screen" title="no title">
-  </head>
-  <body>
-      <header>
-        <h1 class="site-name">Chris <br> Brennan</h1>
-        <h2 class="title">Web Developer <br> &#47; Designer</h2>
-        <img src="images/me.png" alt="Chris Brennan" />
-      </header>
-      <section>
-        <!--- col one-half -->
-        <h2 class="section-title">Experience.</h2>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+<header>
+  <div class="title-box">
+    <h1 class="site-name">Chris <br> Brennan</h1>
+    <h2 class="title">Web Developer <br> <span class="red"> &#47; </span>Designer</h2>
+  </div>
+  <div class="portrait">
+    <img class="parallax-down" src="images/me.png" alt="Chris Brennan" />
+    </div>
+</header> <!-- end header -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-8 col-lg-8">
+        <h2 class="section-title">Experience<span class="yellow">.</span></h2>
         <ul class="websites">
           <h3>Websites</h3>
           <li><a href="#">Katie Simone</a></li>
           <li><a href="#">Brass Tacks</a></li>
           <li><a href="#">Painted Wings</a></li>
-        <ul class="codepen">
+        </ul>
+        <ul class="codepens">
           <h3>Codepen</h3>
           <li><a href="#">Michael Jordan</a></li>
           <li><a href="#">Checkbox Hack</a></li>
         </ul>
-        <!--- col-one-half -->
+      </div>
+      <div class="col-xs-6 col-md-4 col-lg-4">
         <ul class="skills">
           <h3>Skills</h3>
-          <li>html5/css3</li>
+          <li class="upper">html5/css3</li>
           <li>bootstrap</li>
           <li>jquery&#47;javascript</li>
           <li>photoshop</li>
           <li>illustrator</li>
         </ul>
-      </section>
-      <!--- col-twelve-col -->
-      <article>
-        <h2 class="section-title">What <br> they say...</h2>
+      </div>
+    </div>
+  </div>
+</section> <!-- end section -->
+
+<article class="mobile">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="section-title blinking">What <br>they say<span class="red">.</span><span>.</span><span>.</span></h2>
+        <div class="testimonials-slider">
+          <div class="slide">
+            <img src="images/katie-simone-pic.jpg" alt="katie-simone" />
+            <p>Chris is a true professional with an impeccable eye for design. He created a beautiful website for me and could not have been easier to work with.</p>
+            <p class="name">Katie Simone &#40;<span class="brown">musician</span>&#41;</p>
+          </div>
+          <div class="slide">
+            <img src="images/adam-helbing-pic.jpg" alt="adam-helbling" />
+            <p>Excited to be working with an awesome designer and person. Love my site.</p>
+            <p class="name">Adam Helbling &#40;<span class="brown">brass tacks</span>&#41;</p>
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+          </div>
+          <div class="slide">
+          <img src="images/eric-shea-pic.jpg" alt="eric-shea" />
+            <p>Chris is very efficient, easy to work with, &amp; I would highly recommend him.</p>
+            <p class="name">Eric Shea &#40;<span class="brown">maimed &amp; tamed</span>&#41;</p>
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article> <!-- end slider -->
+
+<article class="desktop">
+  <div class="container">
+    <div class="row">
+      <h2 class="section-title blinking">What they say<span class="red">.</span><span>.</span><span>.</span></h2>
+      <div class="col-md-4">
         <img src="images/katie-simone-pic.jpg" alt="katie-simone" />
         <p>Chris is a true professional with an impeccable eye for design. He created a beautiful website for me and could not have been easier to work with.</p>
-        <p class="name">Katie Simone&#40;musician&#41;</p>
+        <p class="name">Katie Simone &#40;<span class="brown">musician</span>&#41;</p>
         <i class="fa fa-quote-left" aria-hidden="true"></i>
-      </article>
-      <!--- col-twelve-col -->
-      <footer>
-        <h2 class="section-title">Contact<br>Chris.</h2>
-        <h3 class="tagline">Need a website? Hiring?</h3>
-        <p class="resume-pdf"><a href="/images/myw3schoolsimage.jpg" download>Download Resume pdf</a></p>
-        <form>
-          <div class="row">
-            <div class="twelve columns">
-              <input class="u-full-width" type="text" placeholder="Full Name" id="fullName">
+      </div>
+      <div class="col-md-4">
+        <img src="images/adam-helbing-pic.jpg" alt="adam-bling" />
+        <p>Excited to be working with an awesome designer and person. Love my site.</p>
+        <p class="name">Adam Helbing &#40;<span class="brown">brass tacks</span>&#41;</p>
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-4">
+        <img src="images/eric-shea-pic.jpg" alt="eric-shea" />
+        <p>Chris is very efficient, easy to work with, &amp; I would highly recommend him.</p>
+        <p class="name">Eric Shea &#40;<span class="brown">maimed &amp; tamed</span>&#41;</p>
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</article> <!-- end article -->
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-8">
+          <h2 class="section-title">Contact <br><span class="yellow">Chris.</span></h2>
+          <h3 class="tagline">Need a website? Hiring?</h3>
+          <p class="resume-pdf"><a href="/images/myw3schoolsimage.jpg" download>Download Resume pdf</a></p>
+          <form role="form " action="" method="">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
             </div>
-            <div class="twelve columns">
-              <input class="u-full-width" type="email" placeholder="E-mail Address" id="exampleEmailInput">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
             </div>
-             <div class="twelve columns">
-              <input class="u-full-width" type="email" placeholder="Subject" id="subject">
+            <div class="form-group">
+              <input type="text" class="form-control" id="sub" name="sub" placeholder="Subject" required>
             </div>
+            <div class="form-group">
+              <textarea rows="5" cols="30" id="msg" name="msg" placeholder="Hello, Chris..." style="width:100%"></textarea>
+            </div>
+              <button type="submit" class="btn btn-default my-button">Submit</button>
+            </form> <!-- end form -->
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+          <div class="tagline-box">
+            <img src="images/me-footer-pic.png" alt="Chris Brennan" />
+            <p class="intro">I design &amp; code websites in Pittsburgh, PA.</p>
           </div>
-            <textarea class="u-full-width" placeholder="Hi Chris..." id="exampleMessage"></textarea>
-            <input class="my-button" type="submit" value="Submit">
-        </form>
-        <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-        <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-      <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-      <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-        <p class="intro">Chris from Pittsburgh,PA</p>
-        <ul class="social">
-          <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>412.610.1609</a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>twitter</a></li>
-          <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i>codepen</a></li>
-          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i>github</a></li>
-        </ul>
-      </footer>
-  </body>
+          <ul class="social">
+            <li class="mobile"><span class="phone">412.610.1609</span></li>
+            <li class="twitter"><a href="#">twitter</a></li>
+            <li class="codepen"><a href="#">codepen</a></li>
+            <li class="github"><a href="#">github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer> <!-- end footer -->
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="http://yourjavascript.com/13912425571/jquery-bxslider-min.js" charset="utf-8"></script>
+<script src="js/general.js" charset="utf-8"></script>
 
 </html>
