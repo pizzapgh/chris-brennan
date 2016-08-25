@@ -56,6 +56,7 @@ i{
   .col-md-3,
   .col-md-5{padding-right:2.6rem;}
 }
+
 /*  global
 ======================*/
 
@@ -342,11 +343,9 @@ article .fa-quote-left{
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-
 .blinkinh span:nth-child(2) {
   animation-delay: .2s;
 }
-
 .blinking span:nth-child(3) {
   animation-delay: .3s;
 }
@@ -361,6 +360,7 @@ article .fa-quote-left{
   100% {
     opacity: .5;
   }
+}
 
   /* animation
   ===========*/
@@ -499,7 +499,7 @@ form{
   display: none;
 }
 textarea{
-  border-radius: .25rem;
+  border-radius: .25rem ;
   padding: .375rem .75rem;
   color:none;
 }
