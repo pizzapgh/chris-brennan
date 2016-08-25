@@ -1,7 +1,11 @@
 html {
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -17,10 +21,170 @@ li a{
   text-decoration:none;
 }
 i{
- color:#f1efe8;
+  color:#f1efe8;
+}
+.red{
+  color:#ec0349;
+}
+.yellow{
+  color: #ffd41d;
+}
+.brown{
+  color:#62500f;
+}
+@media only screen and (min-width:30rem){
+  html {font-size:1.25rem;}
+}
+@media only screen and (min-width:56.25rem){
+  section .container,
+  article .container,
+  footer .container{width:85%;}
+}
+@media only screen and (min-width:77.06rem){
+  section .container,
+  article .container,
+  footer .container{width:65%;}
+}
+@media only screen and (min-width:90rem){
+  section .container,
+  article .container,
+  footer .container{width:60%;}
+}
+@media only screen and (min-width:80.94rem){
+  .col-md-8,
+  .col-md-4,
+  .col-md-3,
+  .col-md-5{padding-right:2.6rem;}
+}
+/*  global
+======================*/
+
+header .title-box{
+  position: absolute;
+  width:100%;
+  top:0.9375rem;
+  left:1.563rem;
+}
+header .title-box, .site-name, .title{
+  color:red;
+}
+@media only screen and (min-width:40.63rem){
+  header .title-box{position: absolute;width:100%;top:1.9375rem;left:2.563rem;}
+}
+@media only screen and (min-width:60rem){
+  header .title-box{top: 2rem; left:3rem;}
+}
+@media only screen and (min-width:70rem){
+  header .title-box{top: 2rem; left:5rem;}
+}
+@media only screen and (min-width:77.06rem){
+  header .title-box{left:9rem;}
+}
+@media only screen and (min-width:87.38rem){
+  header .title-box{top: 2rem; left:13.85rem;}
+}
+@media only screen and (min-width:90rem){
+  header .title-box{top: 2rem; left:19.85rem;}
 }
 
-/*  global
+/*  title
+===========*/
+
+header .portrait{
+  z-index:0;
+  top: 10.63rem;
+  left:0;
+  position:absolute;
+  width:100%;
+}
+header .portrait img{
+  display:block;
+  margin:0 auto;
+  max-width:300px;
+  position:relative;
+}
+@media only screen and (min-width:30rem){
+  header .portrait{top:11rem;}
+  header .portrait img{max-width:380px;}
+}
+@media only screen and (min-width:40.63rem){
+  header .portrait {top: 10.63rem;left:2rem;}
+}
+@media only screen and (min-width:48rem){
+  header .portrait {top:7.63rem;left:5.75rem}
+  header .portrait img{max-width:485px;}
+}
+@media only screen and (min-width:56.25rem){
+  header .portrait{top:1.63rem;}
+}
+@media only screen and (min-width:77.06rem){
+  header .portrait img {max-width:622px;}
+  header .portrait{ top: 1rem;left: 4.75rem;}
+}
+@media only screen and (min-width:90.38rem){
+  header .portrait{ top: 1.8rem;left: 4.75rem;}
+}
+
+/* portrait
+===========*/
+
+section{
+  z-index: 10;
+  position:relative;
+}
+
+/*  portrait style
+======================*/
+
+header,
+article{
+  background-color: #ffd41d;
+}
+section,
+footer{
+  background-color:#ec0349;
+}
+header{
+  padding:1.375rem 1.075rem 23rem;
+}
+@media only screen and (min-width:56.25rem){
+  header{padding-bottom:17rem;}
+}
+@media only screen and (min-width:90.38rem){
+  header{padding-bottom:20rem;}
+}
+section,
+article,
+footer{
+  padding:1.375rem 1.075rem 1.375rem;
+}
+article img{
+  width:86px;
+  border-radius:50%;
+  margin-bottom:1.25rem;
+}
+section,
+article,
+footer{
+  position: relative;
+}
+.desktop{
+  display:none;
+}
+@media only screen and (min-width:40.63rem){
+  section .websites{margin-right: 1.75rem !important;}
+ }
+@media only screen and (min-width:47.94rem){
+  .desktop{display:block;}
+  .mobile{display:none;}
+}
+@media only screen and (min-width:77.06rem){
+  section,
+  article,
+  footer{padding-top:3rem; padding-bottom:3rem;}
+}
+
+/* section style
 ======================*/
 
 .site-name,
@@ -33,10 +197,19 @@ i{
   line-height: 3.125rem;
 }
 section .websites h3,
-section .codepen h3,
+section .codepens h3,
 section .skills h3{
   font-family: 'Roboto Slab', serif;
   font-weight:700;
+  margin-bottom: 0.625rem;
+}
+section .skills{
+  line-height: 1.125rem;
+  display:inline-block;
+  padding-top:4.688rem;
+}
+section .skills li{
+  font-style: italic;
 }
 .title,
 p{
@@ -56,32 +229,19 @@ p{
   font-style:italic;
   color:#7d7d7d;
 }
-
-/*  font styles
-======================*/
-
-header,
-article{
-  background-color: #ffd41d;
-}
-section,
-footer{
-  background-color:#ec0349;
-}
-header{
-    padding:1.875rem 1.875rem 0;
-}
-section,
-article,
-footer{
-    padding:1.875rem 1.875rem 1.875rem;
-}
 header h1.site-name{
   color:#ec0349; /*-- red --*/
   margin-bottom:0.625rem;
 }
 header h2.title{
   color:#62500f; /*-- brown --*/
+}
+article h2.section-title{
+  color:#62500f;
+  padding-left:0rem;
+}
+@media only screen and (min-width: 52.85rem){
+  article h2.section-title{padding-left:1.125rem;}
 }
 section h2.section-title,
 article h2.section-title,
@@ -94,62 +254,206 @@ section h2.section-title,
 footer h2.section-title{
   color:#f1efe8; /*-- white --*/
 }
-article h2.section-title{
-  color:#62500f; /*-- brown --*/
-}
 section .websites h3,
-section .codepen h3{
+section .codepens h3{
   font-size:1.25rem;
   color:#ffd41d;
+}
+section .codepens h3{
+  padding-top:1rem;
+}
+@media only screen and (min-width:30rem){
+  section .codepens h3{padding-top:0;}
 }
 section .skills h3{
   font-size: 1.563rem;
   color:#00ffff;
 }
+@media only screen and (min-width:40rem){
+  section h2.section-title,
+  article h2.section-title,
+  footer h2.section-title{font-size:3rem;}
+  section .skills h3{font-size:2.5rem;}
+}
+@media only screen and (min-width:77.06rem){
+  section h2.section-title,
+  article h2.section-title,
+  footer h2.section-title{font-size:4.05rem;}
+}
+
+/* h1, h2, h3 styling
+======================*/
+
+@media only screen and (min-width:40.63rem){
+  .websites,
+  .codepens{display:inline-block;vertical-align: top;}
+ }
 section .websites li,
-section .codepen li{
+section .codepens li{
   font-size:0.785rem;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 section .websites li a,
-section .codepen li a{
+section .codepens li a{
   text-decoration:underline;
   color:#f1efe8;
 }
 section .skills li{
   font-size:1.063rem;
   color:#f1efe8;
+  line-height: 1.5rem;
 }
+@media only screen and (min-width:40.63rem){
+  section ul.skills{padding-top:1.25rem;padding-left:5.25rem;}
+}
+@media only screen and (min-width:47.94rem){
+  section ul.skills{padding-left: 0;}
+}
+section .upper{
+  text-transform: uppercase;
+}
+
+/*  section styling
+======================*/
+
 article .name{
-  font-size: 1.125rem;
+  font-size:0.85rem;
   font-weight:700;
   color:#ec0349;
 }
 article p{
   font-size: 0.875rem;
+  border-top:5px solid #ec0349;
   margin-bottom:0.625rem;
+  padding-top:1.125rem
+}
+article .name{
+  border-top:none;
+  padding-top:0;
 }
 article .fa-quote-left{
   font-size:40px;
   color:#ec0349;
 }
+.blinking span {
+  font-size: 50px;
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.blinkinh span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.blinking span:nth-child(3) {
+  animation-delay: .3s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: .0;
+  }
+  20% {
+    opacity: .1;
+  }
+  100% {
+    opacity: .5;
+  }
+
+  /* animation
+  ===========*/
+
+.bx-controls,
+.bx-has-pager,
+.bx-has-controls-direction{
+  display:none;
+}
+
+/* slider controls
+==================*/
+
+/*  article styling
+======================*/
+
 footer .social li a{
   font-size: 0.875rem;
   color:#f1efe8;
 }
-
-footer .social .fa{
-  font-size:1.563rem;
-  margin-right:1.25rem;
+footer .social li{
+  display: inline-block;
+  width:49%;
 }
+footer .social li:first-child{
+  color:#f1efe8;
+}
+@media only screen and (min-width:47.94rem){
+  footer .social li{display:block; width:100%;}
+}
+footer .social li a{
+  text-decoration:none;
+  padding:1.25rem 0;
+}
+footer .phone {
+  font-size:  0.775rem;
+}
+footer .mobile:before {
+  font-family: FontAwesome;
+  content: "\f10b";
+  padding-right: 17px;
+  font-size: 2.175rem;
+  padding-left: 5px;
+  color:#f1efe8;
+}
+footer .twitter:before {
+  font-family: FontAwesome;
+  content: "\f099";
+  padding-right: 17px;
+  font-size: 1.563rem;
+  color:#f1efe8;
+}
+footer .codepen:before {
+  font-family: FontAwesome;
+  content: "\f1cb";
+  padding-right: 17px;
+  font-size: 1.563rem;
+  color:#f1efe8;
+}
+footer .resume:before {
+  font-family: FontAwesome;
+  content: "\f007";
+  padding-right: 15px;
+  padding-left: 4px;
+  font-size: 1.563rem;
+  color:#f1efe8;
+}
+footer .github:before {
+  font-family: FontAwesome;
+  content: "\f09b";
+  padding-right: 15px;
+  padding-left: 4px;
+  font-size: 1.563rem;
+  color:#f1efe8;
+}
+
+/*  social links
+======================*/
+
 footer p.resume-pdf{
   font-size: 0.8125rem;
-  margin-bottom:0.625rem;
+  margin-bottom:1rem;
 }
 footer .resume-pdf a{
   color:#ffd41d;
+  text-decoration: underline;
 }
-footer h3.tagline{
+@media only screen and (min-width:47.94rem){
+  footer p.resume-pdf,
+  footer h3.tagline{display: inline-block;}
+}
+  footer p.resume-pdf{padding-left:0.25rem;}
+  footer h3.tagline{
   font-size: 1.063rem;
   letter-spacing:0.010rem;
   margin-bottom:0.3125rem;
@@ -157,36 +461,55 @@ footer h3.tagline{
 }
 footer .intro{
   font-family: 'Roboto Slab', serif;
+  font-weight:600;
   font-size:0.75rem;
   color:#ffd41d;
+  padding-top:0.50rem;
+  text-align: left;
+}
+@media only screen and (min-width:47.94rem){
+  footer .intro{border-top: 5px solid #ffd41d;}
 }
 footer .my-button{
   background-color: #ffd41d !important;
-  border:none !important;
-  margin-bottom:0;
-}
-form{
-  padding-bottom:2.188rem;
-  margin-bottom:1.563rem;
-  border-bottom:6px solid #ffd41d;
-}
-/*  colour styles
-======================*/
-header img{
-  width:276px;
-}
-article img{
-  width:86px;
-  border-radius:50%;
-  margin-bottom:1.25rem;
+  font-size: 1.063rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight:600;
+  color:#ec0349;
 }
 
-input.u-full-width{
-  margin-bottom:0.8125rem;
+/*  colour styles
+======================*/
+
+.form-section{
+  padding:0;
 }
-textarea.u-full-width{
-  margin-bottom: 1.125rem
+form{
+  padding-bottom:2.3rem;
+  margin-bottom: 1rem;
+  border-bottom:5px solid #ffd41d;
+}
+@media only screen and (min-width:47.94rem) {
+  form{border-bottom:none;}
+}
+.tagline-box {
+  text-align: center;
+}
+.container label {
+  display: none;
+}
+textarea{
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  color:none;
 }
 
 /*  form style
 ======================*/
+
+@media only screen and (min-width:80.94rem){
+  section h2.section-title,
+  article h2.section-title,
+  footer h2.section-title{
+    margin-bottom: 2.5rem;}
+}
